@@ -197,6 +197,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro img {
+  width: 100%;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -264,4 +267,34 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 550px) {
+  .home .intro .header-img {
+    border-radius: 5px;
+  }
+  .home .space-images .blast {
+    margin: 20px 25px;
+    width: 100%;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .walk {
+    flex-direction: column-reverse;
+    margin: 40px 0 20px;
+    padding: 0 15px;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+    margin: 0;
+  }
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 22px 0;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0 0 20px;
+  }
 }
