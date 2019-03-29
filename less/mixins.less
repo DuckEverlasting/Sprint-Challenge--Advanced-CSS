@@ -4,3 +4,24 @@
     align-items: @align;
     flex-flow: @flow;
 }
+
+.btn-mx(@bg-color: black, @text-color: white, @width: 200px) {
+    display: inline-block;
+    color: @text-color;
+    background: @bg-color;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    border: 3px solid @bg-color;
+    border-radius: 5px;
+    padding: 8px;
+    width: @width;
+
+    &:hover {
+        background: @text-color;
+        color: @bg-color;
+    }
+
+}
+
