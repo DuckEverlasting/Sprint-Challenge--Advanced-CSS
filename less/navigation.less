@@ -1,7 +1,8 @@
 .nav-bar {
-    
+    background: @nav-bg;
     padding: 12px 0px;
-    
+    border: 1px double @nav-border;
+
     h1 {
         text-align: center;
         padding-bottom: 20px;
@@ -9,12 +10,14 @@
     nav {
         .flex-mx(space-between);
         width: 375px;
-        margin: 0 auto;
+        margin: -10px auto;
         a {
             font-size: 1.6rem;
-            color: black;
+            color: @nav-font;
             font-weight: bold;
             text-decoration: none;
+            padding: 10px;
+            border-radius: 10px;
 
             &:hover {
                 text-decoration: underline;
