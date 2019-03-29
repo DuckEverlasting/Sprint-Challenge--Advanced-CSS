@@ -1,8 +1,12 @@
 // Home Content
 
 .home {
-
+  padding-top: 102px;
   .intro {
+
+    img {
+      width: 100%;
+    }
 
     h2 {
       padding: 15px;
@@ -58,6 +62,7 @@
       }
 
       .btn {
+        .btn-mx(black, white, 100px);
       }
     }
 
@@ -69,6 +74,48 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+  }
+
+  @media @phone {
+    .intro .header-img {
+      border-radius: 5px;
+    }
+
+    .space-images {
+      .blast {
+        margin: 20px 25px;
+        width: 100%
+      }
+
+      .sky, .launch {
+        display: none;
+      }
+    }
+  }
+
+  @media @tablet {
+    .walk {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin: 40px 0 20px;
+      padding: 0 15px;
+
+      .walk-text{
+        width: 100%;
+        margin: 0;
+
+        .btn {
+          width: 100%;
+          padding: 22px 0;
+        }
+      }
+
+      .walk-img{
+        max-width: 500px;
+        width: 100%;
+        margin: 0 0 20px;
       }
     }
   }

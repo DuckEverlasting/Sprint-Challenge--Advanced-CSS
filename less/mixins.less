@@ -1,1 +1,38 @@
-// Mixins Here
+.flex-mx(@justify: center, @align: center, @flow: row nowrap) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-flow: @flow;
+}
+
+.btn-mx(@bg-color: black, @text-color: white, @width: 200px) {
+    display: inline-block;
+    color: @text-color;
+    background: @bg-color;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    border: 3px solid @bg-color;
+    border-radius: 5px;
+    padding: 8px;
+    width: @width;
+    transition: background 1s, color .2s;
+
+    &:hover {
+        background: @text-color;
+        color: @bg-color;
+        animation-name: button-pulse;
+        animation-delay: 1s;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+}
+
+  
+@keyframes button-pulse {
+    from {background-color: white;}
+    to {background-color: @blue;}
+}

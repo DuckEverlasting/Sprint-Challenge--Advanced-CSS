@@ -1,1 +1,29 @@
-// Navigation code here
+.nav-bar {
+    background: linear-gradient(rgba(@nav-bg, 1), rgba(@nav-bg, 1), rgba(@nav-bg, .75));
+    padding: 12px 0px;
+    border: 1px double @nav-border;
+    position: fixed;
+    width: 100%;
+
+    h1 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    nav {
+        .flex-mx(space-between);
+        width: 375px;
+        margin: -10px auto;
+        a {
+            font-size: 1.6rem;
+            color: @nav-font;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 10px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
