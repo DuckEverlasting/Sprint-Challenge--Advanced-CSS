@@ -172,9 +172,11 @@ p {
   margin: 0 auto;
 }
 .nav-bar {
-  background: #F6F6F6;
+  background: linear-gradient(#f6f6f6, #f6f6f6, rgba(246, 246, 246, 0.75));
   padding: 12px 0px;
   border: 1px double #F1F1F1;
+  position: fixed;
+  width: 100%;
 }
 .nav-bar h1 {
   text-align: center;
@@ -208,6 +210,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 102px;
 }
 .home .intro img {
   width: 100%;
@@ -266,11 +271,13 @@ footer {
   border-radius: 5px;
   padding: 8px;
   width: 100px;
+  transition: background 1s, color 0.2s;
 }
 .home .walk .walk-text .btn:hover {
   background: white;
   color: black;
   animation-name: button-pulse;
+  animation-delay: 1s;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
